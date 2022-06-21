@@ -52,7 +52,7 @@
   <div class="flex gap-2 justify-center [perspective:800px] ">
     {#each guesse as l, i (i)}
       <div
-        class={`cell [tansform-style:preserve-3d] ${l.color}`}
+        class={`cell ["tansform-style":preserve-3d] ${l.color}`}
         in:flipCard={{ duration: 200, delay: 100 * i }}
       >
         {l.key}
